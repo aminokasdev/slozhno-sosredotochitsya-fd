@@ -1,25 +1,22 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  padding: var(--page-padding);
   background-color: var(--page-bg-color);
   background-image: var(--page-bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-header {
-  block-size: 100vh;
+  max-block-size: var(--max-block-size);
 }
 
 .header {
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
+  padding: var(--page-padding);
   color: var(--accent-color);
-  max-block-size: var(--max-block-size);
+  block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -72,39 +69,40 @@ header {
 }
 
 .decorated-zone::before {
-  top: 0;
-  right: 0;
+  top: var(--page-padding);
+  right: var(--page-padding);
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
-  bottom: 0;
-  left: 0;
+  bottom: var(--page-padding);
+  left: var(--page-padding);
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
 
 .rec {
   position: absolute;
-  top: 0;
+  top: var(--page-padding);
   right: 28px;
   z-index: 2;
   display: none;
   font-family: var(--main-font-family), monospace;
   font-size: 18px;
-  line-height: 25px; 
+  line-height: 25px;
 }
 
 .rec::before {
   content: "REC";
+  padding-right: var(--page-padding);
 }
 
 .rec::after {
   content: "";
   position: absolute;
   top: 8px;
-  right: -19px;
+  right: var(--rec-right);
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -143,6 +141,7 @@ header {
   flex-direction: column;
   gap: var(--content-gap);
   margin-block-start: var(--content-margin-block-start);
+  padding: 0 var(--page-padding);
 }
 
 .text-section {

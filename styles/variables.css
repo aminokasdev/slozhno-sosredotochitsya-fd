@@ -16,6 +16,7 @@
    --content-margin-block-start: 50px;
    --content-gap: 50px;
    --gallery-gap: 10px;
+   --rec-right: -9px;
 }
 
 /*768x1024*/
@@ -32,6 +33,7 @@
     --content-margin-block-start: 80px;
     --content-gap: 80px;
     --gallery-gap: 20px;
+    --rec-right: 4px;
   }
 }
 
@@ -49,5 +51,6 @@
     --content-margin-block-start: 80px;
     --content-gap: 80px;
     --gallery-gap: 20px;
+    --rec-right: 4px;
   }
 }
