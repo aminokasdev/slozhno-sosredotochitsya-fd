@@ -10,13 +10,16 @@
   background-attachment: fixed;
 }
 
+header {
+  block-size: 100vh;
+}
+
 .header {
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   color: var(--accent-color);
   max-block-size: var(--max-block-size);
-  block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -225,13 +228,16 @@
   max-block-size: 100%;
 }
 
+footer {
+  block-size: 100vh;
+}
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-block-start: 40px;
   max-block-size: var(--max-block-size);
-  block-size: 100vh;
 }
 
 .footer__title {
