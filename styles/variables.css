@@ -13,8 +13,7 @@
    --content-gap: 50px;
    --title-text-margin-block-start: 55px;
    --title-text-max-inline-size: 355px;
-   --content-margin-block-start: 50px;
-   --content-gap: 50px;
+   --content-margin-block-start: 40px;
    --gallery-gap: 10px;
    --rec-right: -9px;
 }
@@ -30,10 +29,9 @@
     --content-gap: 80px;
     --title-text-margin-block-start: 162px;
     --title-text-max-inline-size: 364px;
-    --content-margin-block-start: 80px;
-    --content-gap: 80px;
+    --content-margin-block-start: 60px;
     --gallery-gap: 20px;
-    --rec-right: 4px;
+    --rec-right: 3px;
   }
 }
 
@@ -48,9 +46,8 @@
     --content-gap: 80px;
     --title-text-margin-block-start: 114px;
     --title-text-max-inline-size: 491px;
-    --content-margin-block-start: 80px;
-    --content-gap: 80px;
+    --content-margin-block-start: 60px;
     --gallery-gap: 20px;
-    --rec-right: 4px;
+    --rec-right: 3px;
   }
 }
