@@ -8,7 +8,7 @@
    --page-padding: 10px;
    --margin-block-start: 65px;
    --main-font-family: 'IBM Plex mono';
-   --min-block-size: 648px;
+   --max-block-size: 648px;
    --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
    --content-gap: 50px;
    --title-text-margin-block-start: 55px;
@@ -20,11 +20,11 @@
 
 /*768x1024*/
 @media (min-width: 768px) and (orientation: portrait) {
-  :root{
+  :root {
     --min-height: 1024px;
     --page-padding: 20px;
     --margin-block-start: 172px;
-    --min-block-size: 984px;
+    --max-block-size: 984px;
     --h1-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --content-gap: 80px;
     --title-text-margin-block-start: 162px;
@@ -37,11 +37,11 @@
 
 /*1024x768*/
 @media (min-width: 1024px) and (orientation: landscape) {
-  :root{
+  :root {
     --min-height: 768px;
     --page-padding: 20px;
     --margin-block-start: 0;
-    --min-block-size: 728px;
+    --max-block-size: 728px;
     --h1-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --content-gap: 80px;
     --title-text-margin-block-start: 114px;

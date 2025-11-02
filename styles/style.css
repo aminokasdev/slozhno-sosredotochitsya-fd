@@ -15,7 +15,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   color: var(--accent-color);
-  min-block-size: var(--min-block-size);
+  max-block-size: var(--max-block-size);
+  block-size: 100vh;
 }
 
 .header__theme-menu {
@@ -155,7 +156,7 @@
   line-height: 23.4px;
 }
 
-.text-section__texts{
+.text-section__texts {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -229,7 +230,8 @@
   justify-content: center;
   align-items: center;
   margin-block-start: 40px;
-  min-block-size: var(--min-block-size);
+  max-block-size: var(--max-block-size);
+  block-size: 100vh;
 }
 
 .footer__title {
@@ -317,8 +319,8 @@
     margin-block-start: 60px;
   }
 
-  .text-section_type_primary{
-    grid-template-columns: minmax(0, 315px) 1fr;;
+  .text-section_type_primary {
+    grid-template-columns: minmax(0, 315px) 1fr;
     gap: 20px;
   }
 
