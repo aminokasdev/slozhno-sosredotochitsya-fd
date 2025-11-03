@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  max-block-size: var(--max-block-size);
 }
 
 .header {
@@ -17,6 +16,7 @@
   padding: var(--page-padding);
   color: var(--accent-color);
   block-size: 100vh;
+  min-block-size: var(--min-block-size );
 }
 
 .header__theme-menu {
@@ -34,8 +34,9 @@
 
 .header__theme-menu-button {
   border: none;
-  padding: 0 13px;
+  padding: 1.5px 13px;
   font-family: var(--main-font-family), monospace;
+  font-weight: 400;
   font-size: 18px;
   text-transform: lowercase;
   background: transparent;
@@ -43,7 +44,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
+  border: 1px solid var(--button-hover-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -52,7 +53,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -114,7 +115,7 @@
   color: var(--header-title-color);
   font-family: var(--main-font-family), monospace;
   font-weight: 700;
-  font-size: var(--h1-size);
+  font-size: var(--header-title-size);
   line-height: 0.83;
   text-shadow: 4px 4px 0 var(--primary-color);
 }
@@ -129,7 +130,6 @@
   font-size: 18px;
   line-height: 23.4px;
   max-inline-size: var(--title-text-max-inline-size);
-  max-block-size: 117px;
 }
 
 .title-decor {
@@ -200,7 +200,7 @@
 }
 
 .text-link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid currentColor;
 }
 
 .text-link:focus-visible {
@@ -229,6 +229,7 @@
 
 footer {
   block-size: 100vh;
+  min-block-size: var(--min-block-size);
 }
 
 .footer {
@@ -242,7 +243,7 @@ footer {
   color: var(--header-title-color);
   font-family: var(--main-font-family), monospace;
   font-weight: 700;
-  font-size: var(--h1-size);
+  font-size: var(--header-title-size);
   line-height: 0.83;
   text-shadow: 4px 4px 0 var(--primary-color);
 }
@@ -287,7 +288,7 @@ footer {
     max-width: 236px;
   }
   .header__title {
-    margin-left: -10px;
+    margin-left: -20px;
   }
 }
 

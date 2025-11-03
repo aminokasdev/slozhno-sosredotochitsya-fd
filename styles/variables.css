@@ -8,14 +8,19 @@
    --page-padding: 10px;
    --margin-block-start: 65px;
    --main-font-family: 'IBM Plex mono';
-   --max-block-size: 648px;
-   --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+   --min-block-size: 668px;
+   --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
    --content-gap: 50px;
    --title-text-margin-block-start: 55px;
    --title-text-max-inline-size: 355px;
    --content-margin-block-start: 40px;
    --gallery-gap: 10px;
    --rec-right: -9px;
+   --text-color: #FFFFFF;
+   --accent-color: #FFFFFF;
+   --text-description-color: #FFFFFF;
+   --header-title-color: #FFFFFF;
+   --background-color: #0B1120;
 }
 
 /*768x1024*/
@@ -24,8 +29,8 @@
     --min-height: 1024px;
     --page-padding: 20px;
     --margin-block-start: 172px;
-    --max-block-size: 984px;
-    --h1-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --min-block-size: 1024px;
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --content-gap: 80px;
     --title-text-margin-block-start: 162px;
     --title-text-max-inline-size: 364px;
@@ -41,8 +46,8 @@
     --min-height: 768px;
     --page-padding: 20px;
     --margin-block-start: 0;
-    --max-block-size: 728px;
-    --h1-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --min-block-size: 768px;
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --content-gap: 80px;
     --title-text-margin-block-start: 114px;
     --title-text-max-inline-size: 491px;
