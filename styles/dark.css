@@ -24,3 +24,21 @@
   color: var(--accent-color);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+   --page-bg-image: url('/images/cover-image-dark.png');
+   --page-bg-color: #000028;
+   --accent-color: #FF0070;
+   --header-title-color: #DB00FF;
+   --text-color: #000028;
+   --text-description-color: #F1B2CE;
+   --primary-color: #FF0070;
+   --button-hover-color: #FF007066;
+  }
+  
+  .rec {
+    display: inline-flex;
+    color: var(--accent-color);
+  }
+}
+
